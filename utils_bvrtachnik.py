@@ -2,10 +2,11 @@
 Module: utils_bvrtachnik
 
 Purpose: Reusable Module for My Analytics Projects
+Course: Data Analytics Fundamentals
 
-Description: This module provides a byline for my analytics projects. 
+Description: This module provides a byline for my analytics projects summarizing key data,
+such as client satisfaction and local average annual temperature. 
 When we work hard to write useful code, we want it to be reusable.
-A good byline could be used in every Python analytics project we do.
 
 Author: Brett Vrtachnik
 
