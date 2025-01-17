@@ -72,6 +72,11 @@ Minimum Satisfaction Score:                 {min_score}
 Maximum Satisfaction Score:                 {max_score}
 Mean Satisfaction Score:                    {mean_score:.2f}
 Standard Deviation of Satisfaction Scores:  {stdev_score:.2f}
+Local Annual Temperatures:                  {local_annual_temperatures}
+Minimum Annual Temperature:                 {min_temperature}
+Maximum Annual Temperature:                 {max_temperature}
+Mean Annual Temperature:                    {mean_temperature}
+Standard Deviation of Annual Temperature:   {stdev_temperature:.2f}
 
 """
 
