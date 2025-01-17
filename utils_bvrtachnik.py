@@ -9,8 +9,6 @@ A good byline could be used in every Python analytics project we do.
 
 Author: Brett Vrtachnik
 
-TODO: Change the module name in this opening docstring
-TODO: Change the author in this opening docstring
 """
 
 #####################################
@@ -27,51 +25,54 @@ import statistics  # provides mean(), stdev() and more....
 #####################################
 
 # declare a boolean variable (has a value True or False)
-# TODO: Add another or replace this with your own boolean variable
 has_international_clients: bool = True
 is_privately_held: bool = True
 
 # declare an integer variable 
-# TODO: Add or replace this with your own integer variable
 years_in_operation: int = 10
 number_of_employees: int = 30
 
 # declare a floating point variable
-# TODO: Add or replace this with your own floating point variable
 average_client_satisfaction: float = 4.7
-average_local_daily_temperature: float = 70
+average_local_annual_temperature: float = 70.5
 
 # declare a list of strings
-# TODO: Add or replace this with your own list  
 skills_offered: list = ["Data Analysis", "Machine Learning", "Business Intelligence"]
 languages_used: list = ["SQL", "GitHub", "Python"]
 
 # declare a list of numbers so we can illustrate statistics skills
-# TODO: Add or replace this with your own numeric list  
 client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
+local_annual_temperatures: list = [69.4, 74.2, 74.1, 72.3, 67.1, 69.7, 69.3, 68.0, 72.4, 68.5]
 
-# Calculate basic statistics using built-in Python functions and the statistics module
-# TODO: Replace these variable names with the variable name of your own numeric list
+# Client satisfaction statistics
 min_score: float = min(client_satisfaction_scores)  
 max_score: float = max(client_satisfaction_scores)  
 mean_score: float = statistics.mean(client_satisfaction_scores)  
 stdev_score: float = statistics.stdev(client_satisfaction_scores)
 
+# Local annual temperature statistics
+min_temperature: float = min(local_annual_temperatures)
+max_temperature: float = max(local_annual_temperatures)
+mean_temperature: float = statistics.mean(local_annual_temperatures)
+stdev_temperature: float = statistics.stdev(local_annual_temperatures)
+
+
 # Use a Python formatted string (f-string) to show information
-# TODO: Modify the text in the byline to fit your information
 # TODO: Modify the variables in the byline to use your variable names
 byline: str = f"""
 ---------------------------------------------------------
 Stellar Analytics: Delivering Professional Insights
 ---------------------------------------------------------
-Has International Clients:  {has_international_clients}
-Years in Operation:         {years_in_operation}
-Skills Offered:             {skills_offered}
-Client Satisfaction Scores: {client_satisfaction_scores}
-Minimum Satisfaction Score: {min_score}
-Maximum Satisfaction Score: {max_score}
-Mean Satisfaction Score: {mean_score:.2f}
-Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
+Has International Clients:                  {has_international_clients}
+Number of Employees:                        {number_of_employees}
+Years in Operation:                         {years_in_operation}
+Skills Offered:                             {skills_offered}
+Client Satisfaction Scores:                 {client_satisfaction_scores}
+Minimum Satisfaction Score:                 {min_score}
+Maximum Satisfaction Score:                 {max_score}
+Mean Satisfaction Score:                    {mean_score:.2f}
+Standard Deviation of Satisfaction Scores:  {stdev_score:.2f}
+
 """
 
 #####################################
