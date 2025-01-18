@@ -59,15 +59,16 @@ stdev_temperature: float = statistics.stdev(local_annual_temperatures)
 
 
 # Use a Python formatted string (f-string) to show information
-# TODO: Modify the variables in the byline to use your variable names
 byline: str = f"""
 ---------------------------------------------------------
 Stellar Analytics: Delivering Professional Insights
 ---------------------------------------------------------
 Has International Clients:                  {has_international_clients}
+Is Privately Held:                          {is_privately_held}
 Number of Employees:                        {number_of_employees}
 Years in Operation:                         {years_in_operation}
 Skills Offered:                             {skills_offered}
+Languages Used:                             {languages_used}
 Client Satisfaction Scores:                 {client_satisfaction_scores}
 Minimum Satisfaction Score:                 {min_score}
 Maximum Satisfaction Score:                 {max_score}
@@ -132,5 +133,3 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-
-#TODO: Run this as a script and verify all code works as intended.
